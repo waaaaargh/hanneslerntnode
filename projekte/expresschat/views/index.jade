@@ -1,0 +1,16 @@
+html
+  head
+    script(src="/static/jquery.min.js")
+    script(src="socket.io/socket.io.js")
+    title foobar
+  body
+    h1 chat
+    form(method="POST")
+      div
+        ul(id="chat")
+      input(name="name", id="name", placeholder="Name", value="Peter")
+      input(name="message", id="message", placeholder="Message")
+      button(type="button", id="button") Send Message
+    script(src="/static/client.js")
+
+
